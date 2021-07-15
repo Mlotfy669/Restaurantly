@@ -1,0 +1,83 @@
+
+.whyus {
+    background-color: #0C0B09;
+    padding: 60px 0;
+    .whyspan{
+        color: rgb(117, 117, 117);
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 2px;
+            background-color: rgb(117, 117, 117);
+            top: 10px;
+            left:  80px;
+        }
+    }
+    h2{
+        color: #CDA45E;
+        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .parts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width:"767px"){
+            flex-direction: column;
+        }
+        .part {
+            background-color: #1A1814;
+            padding: 55px 25px;
+            transition: 0.5s;
+            width: 400px;
+            height: 300px;
+            border-radius: 10px;
+            border: 2px solid #CDA45E;
+            @media (max-width:"991px"){
+                padding-top: 40px;
+                height: 350px;
+            }
+            @media (max-width:"767px"){
+                padding-top: 45px;
+                height: 250px;
+                width:600px ;
+                margin-bottom: 30px;
+            }
+            @media (max-width:"623px"){
+                width:400px ;
+            }
+            
+            &:hover{
+                background-color: #CDA45E;
+                padding-top:30px ;
+            }
+            &:hover > h3 ,&:hover > p{
+                color: white;
+            }
+            h3{
+                color: #CDA45E;
+                margin-bottom: 20px;
+            }
+            span {
+                color: white;
+                font-size: 25px;
+                margin-bottom: 20px;
+                display: inline-block;
+            }
+            p{
+                color: rgb(145, 143, 143);
+                padding: 0;
+            }
+        }
+        .part:not(:last-of-type) {
+            margin-right: 30px;
+            @media (max-width:"767px"){
+                margin-right: 0;
+            }
+        }
+    }
+
+}

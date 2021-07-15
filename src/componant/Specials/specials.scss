@@ -1,0 +1,129 @@
+@import "~bootstrap/scss/bootstrap";
+
+.special {
+    background-color: #0C0B09;
+    padding: 60px 0;
+    .info{
+        .spespan{
+            color: rgb(117, 117, 117);
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 2px;
+                background-color: rgb(117, 117, 117);
+                top: 10px;
+                left:  90px;
+            }
+        }
+        h2{
+            color: #CDA45E;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+    .show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media(max-width:"991px"){
+           flex-direction: column;
+        }
+        .list {
+            position: relative;
+            display: inline-block;
+            @media(max-width:"991px"){
+                margin-bottom: 60px;
+             }
+            &:after {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 3px;
+                background-color: #CDA45E;
+                top: 0;
+                right: -3px;
+                @media(max-width:"991px"){
+                    width: 0;
+                 }
+            }
+            button{
+                padding: 12px;
+                width: 250px;
+                display: block;
+                color: white;
+                border: 0;
+                background-color: transparent;
+                transition: 0.5s;
+                &:hover {
+                    color: #CDA45E;
+                }
+                @media(max-width:"991px"){
+                    width: 700px;
+                    text-align: left;
+                 }
+                @media(max-width:"767px"){
+                    width: 400px;
+                    text-align: left;
+                 }
+            }
+            .active{
+                background-color: #CDA45E;
+                color: black;
+                &:hover{
+                    color: black;
+                }
+            }
+            
+        }
+        .part {
+            @media(max-width:"991px"){
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+             }
+        }
+        .onep,.twop,.threep , .fourp ,.fivep{
+            display: flex;
+            justify-content: center;
+            padding: 0 30px;
+            transition: 5s;
+            .info {
+                h3 {
+                    color: white;
+                    margin-bottom: 20px;
+                    @media(max-width:"1190px"){
+                        font-size: 20px;
+                    }
+                }
+                span {
+                    color: rgb(158, 157, 157);
+                    font-style: italic;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                    @media(max-width:"1190px"){
+                        font-size: 15px;
+                    }
+                }
+                p{
+                    color: rgb(158, 157, 157);
+                    @media(max-width:"1190px"){
+                        font-size: 15px;
+                    }
+                }
+            }
+            img{
+                width: 250px;
+                height: 250px;
+                @media(max-width:"991px"){
+                    margin-bottom: 40px;
+                 }
+            }
+        }
+         .twop ,.threep , .fourp  , .fivep  {
+            display: none;
+        }
+    }
+}

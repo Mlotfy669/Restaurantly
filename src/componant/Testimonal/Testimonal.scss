@@ -1,0 +1,95 @@
+
+.test {
+    padding: 60px 0;
+    background-color: #1A1814;
+    @media(max-width:"991px"){
+        padding-bottom: 150px;
+    }
+    .info{
+        position: relative;
+        .evespan{
+            color: rgb(117, 117, 117);
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 2px;
+                background-color: rgb(117, 117, 117);
+                top: 10px;
+                left:  140px;
+            }
+        }
+        h2{
+            color: #CDA45E;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media(max-width:"767px"){
+            flex-direction: column;
+        }
+        .cart_full:not(:last-child){
+            margin-right: 30px;
+        }
+        .cart_full {
+            position: relative;
+            height: 350px;
+            padding-bottom: 30px;
+            @media(max-width:"767px"){
+                height: 290px;
+            }
+            .cart {
+                background-color: #26231D;
+                border-radius: 7px;
+                padding: 20px;
+                height: 250px;
+                @media(max-width:"991px"){
+                    height:310px ;
+                }
+                @media(max-width:"767px"){
+                    height: 170px;
+                    margin-bottom: 150px;
+                }
+                p{
+                    color: white;
+                    .quote {
+                        font-size: 30px;
+                        color: #CDA45E;
+                    }
+                }
+            }
+            .test_info {
+                position: absolute;
+                bottom: -10px;
+                left: 20px;
+                @media(max-width:"991px"){
+                    bottom: -70px;
+                    left: 50px;
+                }
+                @media(max-width:"767px"){
+                    bottom: 10px;
+                    left: 40%;
+                }
+                img{
+                    width: 90px;
+                    height: 90px;
+                    border: 6px solid #514F4A;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                }
+                h5 {
+                    color: white;
+                }
+                span{
+                    color: rgb(141, 141, 141);
+                }
+            }
+        }
+    }
+}

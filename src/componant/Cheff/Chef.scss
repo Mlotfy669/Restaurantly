@@ -1,0 +1,82 @@
+
+.cheff {
+    padding: 60px 0;
+    background-color: #0C0B09;
+    
+    .info{
+        position: relative;
+        .chfspan{
+            color: rgb(117, 117, 117);
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 2px;
+                background-color: rgb(117, 117, 117);
+                top: 10px;
+                left:  140px;
+            }
+        }
+        h2{
+            color: #CDA45E;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+    .bigbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        .box-chef {
+            position: relative;
+            &:hover .chefinfo {
+                position: absolute;
+                bottom: 20px;
+                left: 30%;
+                z-index: 999;
+                display: block; 
+            }
+            &:hover .overlay {
+                display: block;
+            }
+            .overlay{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba($color: #000000, $alpha: 0.7);
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                display: none;
+            }
+            img {
+                width: 100%;
+                height: 350px;
+                border: 2px solid #CDA45E;
+                border-radius: 10px;
+            }
+            .chefinfo {
+                color: white;
+                text-align: center;
+                display: none;
+                .ic:not(:last-of-type) {
+                    margin-right: 25px;
+                }
+                .ic {
+                    transition: 0.3s;
+                    margin-top: 15px;
+                    &:hover {
+                        cursor: pointer;
+                        color: #CDA45E;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,218 @@
+.home {
+    background: url('../img/hero-bg.jpg') fixed top center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    .overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: black, $alpha: .5);
+        z-index: 0;
+    }
+
+    .time{
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        padding: 20px 0;
+        z-index: 999;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            .info {
+                span{
+                    margin-right: 10px;
+                    color: white;
+                    padding: 0;
+                    @media(max-width:460px) {
+                        font-size: 12px;
+                     }
+                    .icon {
+                        color: #CDA45E;
+                        font-size: 20px;
+                        margin-right: 5px;
+                        }
+                }
+            }
+            .lang{
+                color: white;
+                @media(max-width:460px) {
+                    font-size: 12px;
+                 }
+                .en {
+                    color:#CDA45E ;
+                }
+                .de{
+                    cursor: pointer;
+                }
+            }
+        }
+     
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: .4);
+        height: 70px;
+        position: relative;
+        top: 0;
+        z-index: 999;
+        @media(max-width:992px){
+           height: 90px;
+        }
+        @media(max-width:767px) {
+            height: 70px;
+         }
+        .logo{
+            color: white;
+            cursor: pointer;
+            font-size: 35px;
+            &:hover {
+                text-decoration: none;
+                color: white;
+            }
+            @media(min-width:992px) ,(max-width:1140px){
+                font-size: 25px;
+            }
+        }
+        ul {
+            justify-content:end;
+            list-style: none;
+            display: flex;
+            margin: auto 0;
+            @media(max-width:767px) {
+                display: none;
+             }
+            li{
+                padding-top: 6px;
+                a{
+                    color: white;
+                    margin-right: 25px;
+                    font-size: 17px;
+                    &:hover {
+                    text-decoration: none;
+                    color: #CDA45E;
+                    }
+                    @media(min-width:992px) ,(max-width:1140px){
+                        font-size: 14px;
+                        margin-right: 15px;
+                    }
+                }
+                .activeLink {
+                    color: #CDA45E;
+                 }
+            }
+            .book {
+                color: white;
+                text-decoration: none;
+                border: 2px solid #CDA45E;
+                border-radius: 20px;
+                padding: 5px 20px;
+                transition: 0.3s;
+                &:hover {
+                    background-color: #CDA45E;
+                }
+                @media(min-width:992px) ,(max-width:1140px){
+                    font-size: 14px;
+                    padding: 5px 15px;
+                }
+            }
+        }
+        .humIcon {
+            display: none ;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+            @media(max-width:767px) {
+                display: block;
+             }
+             &:hover + ul {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: rgba(#000, 0.9);
+              }
+              &:hover +ul li {
+                  padding-left: 50px;
+                  padding-bottom: 10px;
+              }
+              &:hover +ul li:not(:last-of-type) {
+                border-bottom: 1px solid white;
+              }
+              &:hover + ul .book {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+        
+       
+    }
+
+    .infoHome {
+        position: relative;
+        z-index: 10;
+        padding: 220px 0 220px 120px ;
+        @media(max-width:493px) {
+            padding: 220px 0 220px 50px ;
+        }
+        h1{
+            z-index: 2;
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+            .restSpan {
+                color:#CDA45E ;
+            }
+            @media(max-width:767px) {
+                font-size: 40px;
+             }
+            @media(max-width:613px) {
+                font-size: 30px;
+             }
+            @media(max-width:424px) {
+                font-size: 25px;
+             }
+        }
+        p{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 40px;
+            @media(max-width:613px) {
+                font-size: 16px;
+             }
+             @media(max-width:424px) {
+                font-size: 14px;
+             }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            border: 2px solid #CDA45E;
+            border-radius: 20px;
+            padding: 5px 20px;
+            transition: 0.3s;
+            &:first-of-type {
+                margin-right: 20px;
+            }
+            &:hover {
+                background-color: #CDA45E;
+            }
+            @media(max-width:767px) {
+                padding: 5px 10px;
+             }
+        }
+    }
+    
+}
+
+

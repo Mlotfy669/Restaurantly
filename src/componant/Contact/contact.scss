@@ -1,0 +1,79 @@
+.contact {
+    padding: 60px 0;
+    background-color: #0C0B09;
+    .info{
+        position: relative;
+        .chfspan{
+            color: rgb(117, 117, 117);
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 2px;
+                background-color: rgb(117, 117, 117);
+                top: 10px;
+                left:  140px;
+            }
+        }
+        h2{
+            color: #CDA45E;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+
+    iframe {
+        border: 0;
+        width: 100%;
+        height: 350px;
+        margin-bottom: 60px;
+    }
+    .all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+    .info-data {
+        color: white;
+        .address ,.open-hours,.email,.phone {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .data{
+            margin-left: 20px;
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+                color: rgb(143, 142, 142);
+            }
+        }
+        .icon {
+            background-color: #CDA45E;
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    }
+    .form-control{
+        background-color: transparent;
+        &:focus {
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+        }
+    }
+    button{
+        background-color: #CDA45E;
+        border-radius: 20px;
+        padding: 10px 30px;
+        outline: none;
+        border: 0;
+        color: white;
+    }
+
+}

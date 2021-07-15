@@ -1,0 +1,43 @@
+
+.reserv {
+    padding: 60px 0;
+    background-color: #0C0B09;
+    .info{
+        position: relative;
+        .evespan{
+            color: rgb(117, 117, 117);
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 2px;
+                background-color: rgb(117, 117, 117);
+                top: 10px;
+                left:  130px;
+            }
+        }
+        h2{
+            color: #CDA45E;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+    .form-control{
+        background-color: transparent;
+        border: 1px solid rgb(117, 117, 117);
+        &:focus {
+            background-color: transparent;
+            border: 1px solid #CDA45E;
+            outline: none !important;
+        }
+    }
+    button{
+        background-color: #CDA45E;
+        border-radius: 30px;
+        border: 0;
+        padding: 10px 20px;
+        color: white;
+    }
+}
