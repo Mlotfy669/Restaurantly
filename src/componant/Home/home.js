@@ -6,7 +6,6 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default class Home extends Component {
-
     componentDidMount() {
         new WOW.WOW().init();
     }
