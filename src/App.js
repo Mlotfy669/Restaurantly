@@ -19,7 +19,6 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-
         <Home />
         <Feature />
         <WhyUs />
@@ -32,9 +31,6 @@ class App extends Component {
         <Cheff />
         <Contact />
         <Footer />
-        
-
-
       </div>
     );
   }
