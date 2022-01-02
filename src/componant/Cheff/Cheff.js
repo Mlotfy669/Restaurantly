@@ -11,7 +11,7 @@ export default function Cheff() {
 
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="cheff">
             <div className="container wow animate__zoomIn" data-wow-duration="1s">

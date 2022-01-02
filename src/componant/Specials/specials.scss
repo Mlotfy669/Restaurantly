@@ -28,13 +28,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media(max-width:"991px"){
+        @media(max-width:"791px"){
            flex-direction: column;
         }
         .list {
             position: relative;
             display: inline-block;
-            @media(max-width:"991px"){
+            @media(max-width:"791px"){
                 margin-bottom: 60px;
              }
             &:after {
@@ -60,12 +60,12 @@
                 &:hover {
                     color: #CDA45E;
                 }
-                @media(max-width:"991px"){
-                    width: 700px;
-                    text-align: left;
-                 }
+                // @media(max-width:"991px"){
+                //     width: 700px;
+                //     text-align: left;
+                //  }
                 @media(max-width:"767px"){
-                    width: 400px;
+                    width: 300px;
                     text-align: left;
                  }
             }
@@ -79,7 +79,7 @@
             
         }
         .part {
-            @media(max-width:"991px"){
+            @media(max-width:"791px"){
                 flex-direction: column-reverse;
                 justify-content: center;
                 align-items: center;
@@ -117,7 +117,7 @@
             img{
                 width: 250px;
                 height: 250px;
-                @media(max-width:"991px"){
+                @media(max-width:"791px"){
                     margin-bottom: 40px;
                  }
             }

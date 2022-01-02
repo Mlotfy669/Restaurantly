@@ -30,6 +30,9 @@
         justify-content: center;
         align-items: center;
         gap: 25px;
+        @media(max-width:880px){
+            flex-direction: column;
+        }
         .box-chef {
             position: relative;
             &:hover .chefinfo {
