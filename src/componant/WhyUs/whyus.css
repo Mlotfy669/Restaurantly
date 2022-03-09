@@ -1,0 +1,117 @@
+.whyus {
+  background-color: #0C0B09;
+  padding: 60px 0;
+}
+
+.whyus .whyspan {
+  color: #757575;
+  position: relative;
+}
+
+.whyus .whyspan::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: #757575;
+  top: 10px;
+  left: 80px;
+}
+
+.whyus h2 {
+  color: #CDA45E;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.whyus .parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .whyus .parts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.whyus .parts .part {
+  background-color: #1A1814;
+  padding: 55px 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid #CDA45E;
+}
+
+@media (max-width: 991px) {
+  .whyus .parts .part {
+    padding-top: 40px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .whyus .parts .part {
+    padding-top: 45px;
+    height: 250px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 623px) {
+  .whyus .parts .part {
+    width: 320px;
+  }
+}
+
+.whyus .parts .part:hover {
+  background-color: #CDA45E;
+  padding-top: 30px;
+}
+
+.whyus .parts .part:hover > h3, .whyus .parts .part:hover > p {
+  color: white;
+}
+
+.whyus .parts .part h3 {
+  color: #CDA45E;
+  margin-bottom: 20px;
+}
+
+.whyus .parts .part span {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.whyus .parts .part p {
+  color: #918f8f;
+  padding: 0;
+}
+
+.whyus .parts .part:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .whyus .parts .part:not(:last-of-type) {
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=whyus.css.map */

@@ -1,0 +1,50 @@
+.reserv {
+  padding: 60px 0;
+  background-color: #0C0B09;
+}
+
+.reserv .info {
+  position: relative;
+}
+
+.reserv .info .evespan {
+  color: #757575;
+  position: relative;
+}
+
+.reserv .info .evespan::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: #757575;
+  top: 10px;
+  left: 130px;
+}
+
+.reserv .info h2 {
+  color: #CDA45E;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.reserv .form-control {
+  background-color: transparent;
+  border: 1px solid #757575;
+}
+
+.reserv .form-control:focus {
+  background-color: transparent;
+  border: 1px solid #CDA45E;
+  outline: none !important;
+}
+
+.reserv button {
+  background-color: #CDA45E;
+  border-radius: 30px;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+}
+/*# sourceMappingURL=Reservetion.css.map */

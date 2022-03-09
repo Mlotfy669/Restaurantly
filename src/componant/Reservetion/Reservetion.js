@@ -4,7 +4,7 @@ import WOW from 'wowjs';
 export default function Reservetion() {
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="reserv">
             <div className="container wow animate__zoomIn" data-wow-duration="1s">

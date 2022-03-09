@@ -60,23 +60,19 @@
                 &:hover {
                     color: #CDA45E;
                 }
-                // @media(max-width:"991px"){
-                //     width: 700px;
-                //     text-align: left;
-                //  }
+                &:focus {
+                    background-color: #CDA45E;
+                    color: black;
+                }
                 @media(max-width:"767px"){
                     width: 300px;
                     text-align: left;
                  }
             }
-            .active{
-                background-color: #CDA45E;
-                color: black;
-                &:hover{
-                    color: black;
-                }
-            }
-            
+            // .active{
+            //     background-color: #CDA45E;
+            //     color: black;
+            // }
         }
         .part {
             @media(max-width:"791px"){

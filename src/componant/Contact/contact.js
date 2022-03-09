@@ -8,7 +8,7 @@ import { MdCall } from 'react-icons/md';
 export default function Contact() {
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="contact">
             <div className="container wow animate__zoomIn" data-wow-duration="1s">

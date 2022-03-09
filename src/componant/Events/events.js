@@ -8,7 +8,7 @@ export default function Events() {
 
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="events">
             <div className="overlay"></div>

@@ -1,0 +1,139 @@
+.test {
+  padding: 60px 0;
+  background-color: #1A1814;
+}
+
+@media (max-width: 991px) {
+  .test {
+    padding-bottom: 150px;
+  }
+}
+
+.test .info {
+  position: relative;
+}
+
+.test .info .evespan {
+  color: #757575;
+  position: relative;
+}
+
+.test .info .evespan::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: #757575;
+  top: 10px;
+  left: 140px;
+}
+
+.test .info h2 {
+  color: #CDA45E;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.test .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .test .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.test .cards .cart_full:not(:last-child) {
+  margin-right: 30px;
+}
+
+.test .cards .cart_full {
+  position: relative;
+  height: 350px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .test .cards .cart_full {
+    height: 290px;
+  }
+}
+
+.test .cards .cart_full .cart {
+  background-color: #26231D;
+  border-radius: 7px;
+  padding: 20px;
+  height: 250px;
+}
+
+@media (max-width: 991px) {
+  .test .cards .cart_full .cart {
+    height: 310px;
+  }
+}
+
+@media (max-width: 767px) {
+  .test .cards .cart_full .cart {
+    height: 170px;
+    margin-bottom: 150px;
+  }
+}
+
+.test .cards .cart_full .cart p {
+  color: white;
+}
+
+.test .cards .cart_full .cart p .quote {
+  font-size: 30px;
+  color: #CDA45E;
+}
+
+.test .cards .cart_full .test_info {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+}
+
+@media (max-width: 991px) {
+  .test .cards .cart_full .test_info {
+    bottom: -70px;
+    left: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .test .cards .cart_full .test_info {
+    bottom: 10px;
+    left: 40%;
+  }
+}
+
+.test .cards .cart_full .test_info img {
+  width: 90px;
+  height: 90px;
+  border: 6px solid #514F4A;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.test .cards .cart_full .test_info h5 {
+  color: white;
+}
+
+.test .cards .cart_full .test_info span {
+  color: #8d8d8d;
+}
+/*# sourceMappingURL=Testimonal.css.map */

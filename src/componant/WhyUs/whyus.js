@@ -5,7 +5,7 @@ export default function WhyUs() {
 
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="whyus">
             <div className="container">

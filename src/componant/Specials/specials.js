@@ -14,92 +14,76 @@ export default function Specials() {
 
     useEffect(() => {
         new WOW.WOW().init();
-        if (activestate === '1') {
-            document.querySelectorAll(".list button").forEach((e) => {
-                e.classList.remove("active");
-            });
-            document.querySelector(".btn11").classList.add("active");
-        } else if (activestate === '2') {
-            document.querySelectorAll(".list button").forEach((e) => {
-                e.classList.remove("active");
-            });
-            document.querySelector(".btn22").classList.add("active");
-        }else if (activestate === '3') {
-            document.querySelectorAll(".list button").forEach((e) => {
-                e.classList.remove("active");
-            });
-            document.querySelector(".btn33").classList.add("active");
-        }else if (activestate === '4') {
-            document.querySelectorAll(".list button").forEach((e) => {
-                e.classList.remove("active");
-            });
-            document.querySelector(".btn44").classList.add("active");
+    },[])
+    useEffect(() => {
+        // if (activestate === '1') {
+        //     document.querySelectorAll(".list button").forEach((e) => {
+        //         e.classList.remove("active");
+        //     });
+        //     document.querySelector(".btn11").classList.add("active");
+        // } else if (activestate === '2') {
+        //     document.querySelectorAll(".list button").forEach((e) => {
+        //         e.classList.remove("active");
+        //     });
+        //     document.querySelector(".btn22").classList.add("active");
+        // }else if (activestate === '3') {
+        //     document.querySelectorAll(".list button").forEach((e) => {
+        //         e.classList.remove("active");
+        //     });
+        //     document.querySelector(".btn33").classList.add("active");
+        // }else if (activestate === '4') {
+        //     document.querySelectorAll(".list button").forEach((e) => {
+        //         e.classList.remove("active");
+        //     });
+        //     document.querySelector(".btn44").classList.add("active");
 
-        }else  {
-            document.querySelectorAll(".list button").forEach((e) => {
-                e.classList.remove("active");
-            });
-            document.querySelector(".btn55").classList.add("active");
-        }
-
+        // }else  {
+        //     document.querySelectorAll(".list button").forEach((e) => {
+        //         e.classList.remove("active");
+        //     });
+        //     document.querySelector(".btn55").classList.add("active");
+        // }
         if (cardnum === 'two') {
-            let e1 = document.querySelector(".onep");
-            e1.style.display = 'none';
-            let e2 = document.querySelector(".threep");
-            e2.style.display = 'none';
-            let e3 = document.querySelector(".fourp");
-            e3.style.display = 'none';
-            let e4 = document.querySelector(".fivep");
-            e4.style.display = 'none';
+            let e1 = document.querySelectorAll(".part");
+            let i;
+            for (i = 0; i < e1.length; i++) {
+                e1[i].style.display = 'none';
+            }
             let x = document.querySelector(".twop");
             x.style.display = 'flex';
         } else if (cardnum === 'one') {
-            let e1 = document.querySelector(".twop");
-            e1.style.display = 'none';
-            let e2 = document.querySelector(".threep");
-            e2.style.display = 'none';
-            let e3 = document.querySelector(".fourp");
-            e3.style.display = 'none';
-            let e4 = document.querySelector(".fivep");
-            e4.style.display = 'none';
+            let e1 = document.querySelectorAll(".part");
+            let i;
+            for (i = 0; i < e1.length; i++) {
+                e1[i].style.display = 'none';
+            }
             let x = document.querySelector(".onep");
             x.style.display = 'flex';
-            
         } else if (cardnum === 'three') {
-            let e1 = document.querySelector(".twop");
-            e1.style.display = 'none';
-            let e2 = document.querySelector(".onep");
-            e2.style.display = 'none';
-            let e3 = document.querySelector(".fourp");
-            e3.style.display = 'none';
-            let e4 = document.querySelector(".fivep");
-            e4.style.display = 'none';
+            let e1 = document.querySelectorAll(".part");
+            let i;
+            for (i = 0; i < e1.length; i++) {
+                e1[i].style.display = 'none';
+            }
             let x = document.querySelector(".threep");
             x.style.display = 'flex';
         } else if (cardnum === 'four') {
-            let e1 = document.querySelector(".twop");
-            e1.style.display = 'none';
-            let e2 = document.querySelector(".onep");
-            e2.style.display = 'none';
-            let e3 = document.querySelector(".threep");
-            e3.style.display = 'none';
-            let e4 = document.querySelector(".fivep");
-            e4.style.display = 'none';
+            let e1 = document.querySelectorAll(".part");
+            let i;
+            for (i = 0; i < e1.length; i++) {
+                e1[i].style.display = 'none';
+            }
             let x = document.querySelector(".fourp");
             x.style.display = 'flex';
         } else {
-            let e1 = document.querySelector(".twop");
-            e1.style.display = 'none';
-            let e2 = document.querySelector(".onep");
-            e2.style.display = 'none';
-            let e3 = document.querySelector(".threep");
-            e3.style.display = 'none';
-            let e4 = document.querySelector(".fourp");
-            e4.style.display = 'none';
+            let e1 = document.querySelectorAll(".part");
+            let i;
+            for (i = 0; i < e1.length; i++) {
+                e1[i].style.display = 'none';
+            }
             let x = document.querySelector(".fivep");
             x.style.display = 'flex';
         }
-        
     }, [cardnum, activestate]);
     return (
         <div className="special">
