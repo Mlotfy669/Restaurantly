@@ -13,7 +13,7 @@ export default function Gallary() {
 
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="gallary">
             <div className="container wow animate__zoomIn" data-wow-duration="1s">

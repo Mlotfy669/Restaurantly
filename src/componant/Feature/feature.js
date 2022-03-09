@@ -8,7 +8,7 @@ export default function Feature() {
 
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="feature">
             <div className="overlay"></div>

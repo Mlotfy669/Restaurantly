@@ -1,0 +1,301 @@
+.home {
+  background: url("../img/hero-bg.jpg") fixed top center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.home .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.home .time {
+  position: relative;
+  top: 0;
+  background-color: transparent;
+  padding: 20px 0;
+  z-index: 999;
+}
+
+.home .time .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .time .container .info span {
+  margin-right: 10px;
+  color: white;
+  padding: 0;
+}
+
+@media (max-width: 460px) {
+  .home .time .container .info span {
+    font-size: 12px;
+  }
+}
+
+.home .time .container .info span .icon {
+  color: #CDA45E;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.home .time .container .lang {
+  color: white;
+}
+
+@media (max-width: 460px) {
+  .home .time .container .lang {
+    font-size: 12px;
+  }
+}
+
+.home .time .container .lang .en {
+  color: #CDA45E;
+}
+
+.home .time .container .lang .de {
+  cursor: pointer;
+}
+
+.home .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70px;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+
+@media (max-width: 992px) {
+  .home .navbar {
+    height: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .navbar {
+    height: 70px;
+  }
+}
+
+.home .navbar .logo {
+  color: white;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.home .navbar .logo:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 992px), (max-width: 1140px) {
+  .home .navbar .logo {
+    font-size: 25px;
+  }
+}
+
+.home .navbar ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+}
+
+@media (max-width: 767px) {
+  .home .navbar ul {
+    display: none;
+  }
+}
+
+.home .navbar ul li {
+  padding-top: 6px;
+}
+
+.home .navbar ul li a {
+  color: white;
+  margin-right: 25px;
+  font-size: 17px;
+}
+
+.home .navbar ul li a:hover {
+  text-decoration: none;
+  color: #CDA45E;
+}
+
+@media (min-width: 992px), (max-width: 1140px) {
+  .home .navbar ul li a {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+}
+
+.home .navbar ul li .activeLink {
+  color: #CDA45E;
+}
+
+.home .navbar ul .book {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #CDA45E;
+  border-radius: 20px;
+  padding: 5px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home .navbar ul .book:hover {
+  background-color: #CDA45E;
+}
+
+@media (min-width: 992px), (max-width: 1140px) {
+  .home .navbar ul .book {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
+
+.home .navbar .humIcon {
+  display: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .home .navbar .humIcon {
+    display: block;
+  }
+}
+
+.home .navbar .humIcon:hover + ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.home .navbar .humIcon:hover + ul li {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.home .navbar .humIcon:hover + ul li:not(:last-of-type) {
+  border-bottom: 1px solid white;
+}
+
+.home .navbar .humIcon:hover + ul .book {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.home .infoHome {
+  position: absolute;
+  z-index: 10;
+  left: 50px;
+  bottom: 100px;
+}
+
+.home .infoHome h1 {
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.home .infoHome h1 .restSpan {
+  color: #CDA45E;
+}
+
+@media (max-width: 767px) {
+  .home .infoHome h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 613px) {
+  .home .infoHome h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 424px) {
+  .home .infoHome h1 {
+    font-size: 25px;
+  }
+}
+
+.home .infoHome p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 613px) {
+  .home .infoHome p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 424px) {
+  .home .infoHome p {
+    font-size: 14px;
+  }
+}
+
+.home .infoHome a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #CDA45E;
+  border-radius: 20px;
+  padding: 5px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home .infoHome a:first-of-type {
+  margin-right: 20px;
+}
+
+.home .infoHome a:hover {
+  background-color: #CDA45E;
+}
+
+@media (max-width: 767px) {
+  .home .infoHome a {
+    padding: 5px 10px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

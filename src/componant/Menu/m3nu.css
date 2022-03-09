@@ -1,0 +1,93 @@
+.menu {
+  background-color: #1A1814;
+  padding: 60px 0;
+}
+
+.menu .info .whyspan {
+  color: #757575;
+  position: relative;
+}
+
+.menu .info .whyspan::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: #757575;
+  top: 10px;
+  left: 60px;
+}
+
+.menu .info h2 {
+  color: #CDA45E;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.menu .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.menu .list button {
+  margin-right: 30px;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: transparent;
+  border: 0;
+}
+
+.menu .list button:hover {
+  text-decoration: none;
+  color: #CDA45E;
+}
+
+.menu .list .activebtn {
+  color: #CDA45E;
+}
+
+.menu .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.menu .part img {
+  width: 70px;
+  height: 70px;
+  border: 5px solid #484643;
+  border-radius: 50%;
+}
+
+.menu .part .info_male {
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.menu .part .info_male h6 {
+  color: white;
+  display: inline;
+  position: relative;
+}
+
+.menu .part .info_male span {
+  color: #CDA45E;
+}
+
+.menu .part .info_male p {
+  color: #8D8C8A;
+}
+/*# sourceMappingURL=m3nu.css.map */

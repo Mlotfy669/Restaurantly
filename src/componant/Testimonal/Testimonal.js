@@ -9,7 +9,7 @@ export default function Testimonal() {
 
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="test">
             <div className="container wow animate__zoomIn" data-wow-duration="1s">

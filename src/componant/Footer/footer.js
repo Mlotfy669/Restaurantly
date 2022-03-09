@@ -7,7 +7,7 @@ import { SiTwitter, SiLinkedin } from 'react-icons/si';
 export default function Footer() {
     useEffect(() => {
         new WOW.WOW().init();
-    })
+    },[])
     return (
         <div className="footer">
             <div className="container wow animate__zoomIn" data-wow-duration="1s">

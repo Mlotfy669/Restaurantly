@@ -1,0 +1,61 @@
+.gallary {
+  padding: 60px 0;
+  background-color: #0C0B09;
+}
+
+@media (max-width: 991px) {
+  .gallary {
+    padding-bottom: 150px;
+  }
+}
+
+.gallary .info {
+  position: relative;
+}
+
+.gallary .info .evespan {
+  color: #757575;
+  position: relative;
+}
+
+.gallary .info .evespan::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  background-color: #757575;
+  top: 10px;
+  left: 140px;
+}
+
+.gallary .info h2 {
+  color: #CDA45E;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.gallary .row {
+  margin: 0 20px;
+}
+
+.gallary .row .box {
+  overflow: hidden;
+  border: 1px solid #8d8c8c;
+  padding: 0;
+}
+
+.gallary .row .box img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.gallary .row .box img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+/*# sourceMappingURL=Gallary.css.map */
